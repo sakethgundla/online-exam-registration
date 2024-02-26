@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAM REGISTRATION PORTAL</title>
+    <style>
+        body {
+            background-image: url("page.jpeg");
+            background-size: fill;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            position: relative;
+        }
+
+        .container {
+            background-color:white;
+            opacity: 0.95;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 80%;
+            max-width: 400px;
+            margin-top: 120px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input, button {
+            margin: 8px 0;
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #000000;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #d2dfd2;
+            color: black;
+        }
+
+        #forgotPassword {
+            margin-top: 10px;
+        }
+
+        #forgotPasswordForm {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            text-align: left;
+            margin: 8px 0;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="radio"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .radio-container input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .radio-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .tit{
+            position: absolute;
+            bottom: 450px;
+            font-family: arial;
+            font-size: 50px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p class="tit">EXAM REGISTRATION PORTAL</p>
+    <div class="container">
+        <form id="loginForm" action="Login" method="GET">
+            <h2>Login</h2>
+
+            <div class="radio-container">
+                <input type="radio" name="userType" value="student"><p style="margin-right: 40px;">Student</p> 
+                <input type="radio" name="userType" value="staff"> Staff
+            </div>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="a" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="b" required>
+            <button type="submit" name="s">Login</button>
+            <a href="register.html" target="_blank">Register</a>
+          </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <title></title>
+    <style>
+      body {
+        background-color: beige;
+      }
+      .body {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-bottom: 0px;
+        text-decoration: underline;
+      }
+      .a {
+        text-align: center;
+        margin-top: 50px;
+        color: black;
+        font-size: 20px;
+        border: none;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+      }
+      .sub    {
+        margin-top: 10px;
+        background-color: rgb(0, 238, 255);
+        cursor: pointer;
+        border: 1px;
+        border-radius: 5px;
+        width: 80px;
+        height: 40px;
+      }
+      .First {
+        display: inline-block;
+        float: left;
+      }
+      .seco {
+        display: inline-block;
+        float: right;
+      }
+      select {
+        display: inline-block;
+        text-align: left;
+      }
+      .prof {
+      position: absolute;
+      top: 8%;
+      right: 20px;
+      transform: translateY(-50%);
+      width: 50px;
+      height: auto;
+      border-radius: 8px;
+    }
+    #home-link {
+      position: absolute;
+      top: 8%;
+      right: 95%;
+      transform: translateY(-50%);
+      width: 50px;
+      height: auto;
+      border-radius: 8px
+    }
+    </style>
+      </head>
+    <body>
+      <a href="today.html"><img id="home-link" src="home.png" alt="Home"></a>
+      <a href="profile.html"><img src="prof.png" alt="Profile Picture" class="prof"></a>
+      <h1 class="body">EXAM REGISTRATION</h1>
+      <div class="a">
+        <form action="Swe" method="post">
+          <label class="First">First name:</label>
+          <input type="text" name="a" class="seco"/><br /><br />
+          <label class="First">last name:</label>
+          <input type="text"  name="b" class="seco"/><br /><br />
+          <label class="First">Father name:</label>
+          <input type="text"  name="c" class="seco"/><br /><br />
+          <label class="First">date of birth:</label>
+          <input type="text" placeholder="dd/mm/yyyy" name="d" class="seco"/><br /><br />
+          <label class="First">phone no:</label>
+          <input type="text" name="e" class="seco"/><br /><br />
+          <label class="First">E-mail:</label>
+          <input type="text" placeholder="@gmail.com" name="f" class="seco"/><br /><br />
+          <label class="First">gender:</label>
+          <input type="radio" name="gender" name="g"/>male
+          <input type="radio" name="gender" name="g"/>female <br /><br />
+          <label class="First">branch</label>
+          <select name="i">
+            <option>select</option>
+            <option>CSE</option>
+            <option>CSC</option>
+            <option>CSM</option>
+            <option>CSD</option>
+            <option>CSB</option></select
+          ><br /><br />
+         <input type="submit" name="s" class="sub">
+        </div>
+        </form>
+    </body>
+</html>
